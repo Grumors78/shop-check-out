@@ -7,6 +7,7 @@
 
 body{
    min-width: 100vw;
+   min-height: 100vh;
    font-size: 16px;
    font-family: 'inter';
    font-weight: 500s;
