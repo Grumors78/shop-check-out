@@ -20,8 +20,7 @@ main{
 button,input,select{
   font-size: 16px;
   font-family: 'inter';
-  border-color: #fff #fff;
-  border-width: 2px;
+  border: 1px solid #d2d5da;
 }
 
 .head-div{
@@ -54,14 +53,14 @@ p{
     display: flex;
     position: absolute;
     width: 80%;
-		height: fit-content;
+    height: fit-content;
     left: 9%;
-		top: 45%;
+    top: 45%;
     color:#394150;
-
-		
-
+    border-radius: 1rem;
+    overflow: hidden;
 }
+
 
 h3,#bold-text{
   font-weight: 600;
@@ -217,3 +216,190 @@ border-radius: 9px;
 background-color: #1d1d1f;
 margin-top: 1rem;
 }
+
+
+        /* tablet display */
+
+        @media (min-width: 700px) and (max-width: 1020px){
+
+          body{
+   min-width: 100vw;
+   min-height: 100vh;
+   font-size: 16px;
+   font-family: 'inter';
+   font-weight: 500;
+   text-transform: capitalize;
+}
+
+button,input,select{
+  font-size: 1rem;
+  font-family: 'inter';
+  border-color: #fff #fff;
+  border-width: 2px;
+}
+tr{
+  display: flex;
+  justify-content: space-between;
+  line-height: 1.5rem;
+}
+
+.container{
+display: flex;
+position: absolute;
+width: 92%;
+height: fit-content;
+left: 4%;
+top: 45%;
+color:#394150;
+align-items: flex-start;
+}
+
+.product-box{
+display: flex;
+height: 7.3rem;
+gap: 1.5rem;
+width: 100%;
+}
+
+.image{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 30%;
+background-color: #ffff;
+text-align: center;
+border: none;
+border-radius: 10px;
+padding:  1rem 0;
+}
+
+.detail{
+  display: flex;
+  flex-direction: column;
+	width: 70%;
+  gap: 0.5rem;
+}
+
+.end-cell{
+  margin-top: 2.5rem;
+}
+  
+/* total-list */
+
+  .coupon input{
+  width: 65%;
+  padding: 1.2rem;
+  border-radius: 9px;
+}
+
+.coupon button{
+  background-color: #1d1d1f;
+  border: none;
+  border-radius: 9px;
+  color: white;
+  width: 35%;
+}
+
+.lower tr{
+  display: flex;
+  justify-content: space-between;
+  line-height: 2rem;
+}
+
+}
+
+      /* mobile display */
+
+      @media (orientation: portrait) {
+
+        .head-div{
+    display: flex;
+    justify-content: center;
+     background: url(./assets/background-image.png);
+     background-repeat: no-repeat;
+     background-size: cover;
+     text-align: center;
+     height: 17rem;
+     font-size: 1.5rem;
+}
+
+tr{
+  display: flex;
+  justify-content: space-between;
+  line-height: 1.2rem;
+}
+      
+      .container{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 90%;
+		height: fit-content;
+    left: 5%;
+		top: 45%;
+    color:#394150;
+
+	}
+
+
+
+  .list-div{
+  display: flex;
+  flex-direction: column;
+  background-color: #e5e7eb;
+  border-radius: relative;
+  width: 100%;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.product-box{
+	display: flex;
+	height: 7.3rem;
+	gap: 1.5rem;
+	width: 100%;
+}
+
+.lower tr{
+  display: flex;
+  justify-content: space-between;
+  line-height: 2rem;
+}
+
+	.image{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 30%;
+	background-color: #ffff;
+	text-align: center;
+	border: none;
+	border-radius: 10px;
+	padding:  1rem 0;
+}
+
+	.coupon input{
+	width: 65%;
+	padding: 1.2rem;
+	border-radius: 9px;
+}
+
+.coupon button{
+	background-color: #1d1d1f;
+	border: none;
+	border-radius: 9px;
+	color: white;
+	width: 35%;
+}
+
+
+.form-div{
+	display: flex;
+	flex-direction: column;
+	background-color: #ffff;
+	width: 100%;
+	gap: 2.5rem;
+	padding: 2rem;
+}
+  
+      }
