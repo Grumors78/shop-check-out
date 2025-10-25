@@ -199,7 +199,7 @@ select{
 
 .address{
    display: flex;
-   gap: 2rem;
+   gap: 1rem;
 }
 
 .address div{
@@ -313,7 +313,22 @@ padding:  1rem 0;
 
       @media (orientation: portrait) {
 
-        .head-div{
+
+        body{
+   min-width: 100vw;
+   min-height: 100vh;
+   font-size: 14px;
+   font-family: 'inter';
+   font-weight: 500s;
+   text-transform: capitalize;
+}
+
+button,input,select{
+  font-size: 14px;
+  font-family: 'inter';
+  border: 1px solid #d2d5da;
+}
+    .head-div{
     display: flex;
     justify-content: center;
      background: url(./assets/background-image.png);
@@ -321,7 +336,7 @@ padding:  1rem 0;
      background-size: cover;
      text-align: center;
      height: 17rem;
-     font-size: 1.5rem;
+     font-size: 1.2rem;
 }
 
 tr{
@@ -356,7 +371,7 @@ tr{
 
 .product-box{
 	display: flex;
-	height: 7.3rem;
+	height: 5.5rem;
 	gap: 1.5rem;
 	width: 100%;
 }
@@ -400,7 +415,7 @@ tr{
 	background-color: #ffff;
 	width: 100%;
 	gap: 2.5rem;
-	padding: 2rem;
+	padding: 2rem 0.8rem;
 }
   
       }
